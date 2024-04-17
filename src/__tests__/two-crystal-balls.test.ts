@@ -1,5 +1,5 @@
 import { describe, expect, test } from "bun:test";
-import twoCrystalBalls from "./two-crystal-balls";
+import twoCrystalBalls from "../two_crystal_balls";
 
 describe("two crystal balls", () => {
   const i = Math.floor(Math.random() * (1e3 - 100 + 1)) + 100;

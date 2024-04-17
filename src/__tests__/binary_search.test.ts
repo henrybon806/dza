@@ -1,6 +1,6 @@
 import { describe, expect, test } from "bun:test";
-import binarySearch from "./binary_search";
-import linearSearch from "./linear_search";
+import binarySearch from "../binary_search";
+import linearSearch from "../linear_search";
 
 describe("binary search", () => {
   const arr = [1, 3, 6, 69, 99, 420, 1337];
