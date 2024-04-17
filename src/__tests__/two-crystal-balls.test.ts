@@ -1,7 +1,7 @@
-import { describe, expect, test } from "bun:test";
-import twoCrystalBalls from "../two_crystal_balls";
+import { describe, expect, test } from 'bun:test';
+import twoCrystalBalls from '../two_crystal_balls';
 
-describe("two crystal balls", () => {
+describe('two crystal balls', () => {
   const i = Math.floor(Math.random() * (1e3 - 100 + 1)) + 100;
   const data = Array(1e3).fill(false);
 
@@ -9,13 +9,13 @@ describe("two crystal balls", () => {
     data[_i] = true;
   }
 
-  test("No break point", () => {
+  test('No break point', () => {
     expect(twoCrystalBalls(Array(420).fill(false))).toBe(-1);
   });
-  test("Empty list", () => {
+  test('Empty list', () => {
     expect(twoCrystalBalls([])).toBe(-1);
   });
-  test("Found breakpoint", () => {
+  test('Found breakpoint', () => {
     expect(twoCrystalBalls(data)).toBe(i);
   });
 });
