@@ -6,7 +6,6 @@ export default function bubbleSort(arr: number[]): void {
         arr[j] = arr[j + 1];
         arr[j + 1] = placeholder;
       }
-      console.log(i);
     }
   }
 }
